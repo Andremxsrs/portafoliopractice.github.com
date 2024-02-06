@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <!-- Herramientas SEO van dependiendo de lo qué vayas a realizar -->
+
+    <meta name="description" content="Portafolio de Rony Andrés Valdelamar Vergara">
+
+    <!-- Open Graph 
+    
+        https://www.opengraph.xyz/
+
+        Esta págian sirve para el SEO 
+    -->
+
+    <!-- 
+        Atributos en HTML
+
+        ID - Identificar, solamente puede haber un elemento que tenga el mismo ID
+
+        Clase - Forma de identificar elementos qué se repiten en el HTML
+
+     -->
+
+    <meta property="og:title" content="Portafolio de un Ingeniero de Software">
+
+    <meta property="og:descripcion" 
+    content="Portafolio de un Ingeniero de Software">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-colors" content="#09f">
+
+    <!-- Icono en el Navegador -->
+    <link rel="icon" type="iamge/jpg" href="img/user-photo.png">
+
+    <!-- <style>
+        selector {
+            propiedad: valor; /* Declaración */
+        }
+    </style> -->
+
+</head>
+<body>
+
+    <header>
+        <h1>
+            Portafolio de Ronyhell 🙈
+        </h1>
+
+        <nav>
+            <ul>
+                <a href="#experiencia">Experiencia</a> <!-- Enlaces Ancla -->
+                <a href="#proyectos">Proyectos </a>
+                <a href="https://www.instagram.com/ronyhelll/" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="#">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Simple pop-up dialog box, containing a form -->
+
+    <dialog id="favDialog">
+    <form method="dialog">
+      <section>
+        <p>
+          <label for="favAnimal">Favorite animal:</label>
+          <select id="favAnimal">
+            <option></option>
+            <option>Brine shrimp</option>
+            <option>Red panda</option>
+            <option>Spider monkey</option>
+          </select>
+        </p>
+      </section>
+      <menu>
+        <button id="cancel" type="reset">Cancel</button>
+        <button type="submit">Confirm</button>
+      </menu>
+    </form>
+    </dialog>
+  
+  <menu>
+    <button id="updateDetails">Update details</button>
+  </menu>
+  
+  <script>
+    (function () {
+      var updateButton = document.getElementById("updateDetails");
+      var cancelButton = document.getElementById("cancel");
+      var favDialog = document.getElementById("favDialog");
+  
+      // Update button opens a modal dialog
+      updateButton.addEventListener("click", function () {
+        favDialog.showModal();
+      });
+  
+      // Form cancel button closes the dialog box
+      cancelButton.addEventListener("click", function () {
+        favDialog.close();
+      });
+    })();
+  </script>
+  
+    
+    <main>
+
+    <p>2 años de experiencia como <strong>Desarrollador de Software</strong>. Me gusta mucho el UX/UI y el diseño web.</p>
+
+    <h2 id="experiencia">Experiencia</h2>
+
+    <ul>
+        <li>Desarollador de Software</li>
+        <li>UX/UI</li>
+        <li>WordPress</li>
+    </ul>
+
+    <div role="button">
+        <button>Haz clic aquí</button>
+    </div>
+
+    <img src="img/user-photo.png" alt="Foto de mi persona conjunto con mi novia" title="Rony Andrés Valdelamar Vergara">
+
+    <a download href="img/html-5.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png"  height="100px" width="100px">
+    </a>
+     <h2 id="proyectos">Proyectos Realizados</h2>
+
+     <aside> <!-- Contenido que se relaciona indirectamente con el contenido del documento -->
+        <header>
+            <h3>Mis tecnologías favoritas</h3>
+        </header>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>WordPress</li>
+        </ol>
+     </aside>
+
+     <section> <!-- Abarcar secciones dentro de un documento -->
+        <article> <!-- Bloque independiente de información -->
+            <header>
+                <h4>Página de Diin Espazzios</h4>
+                <img style="width: 100%; aspect-ratio: 95/45;"
+                loading="lazy"
+                src="img/diin.png" alt="Captura de Pantalla de la página web de Diin Espazzios">
+            </header>
+            <p>
+                Página para comerzialición de productos PVC, Aluminio.
+            </p>
+            <footer>
+                <small>Tecnologías utilizadas: HTML, CSS, JS</small>
+            </footer>
+        </article>
+     </section>
+
+     <section>
+        <article> 
+            <header>
+                <h4>Sitio Web Corporativo</h4>
+            </header>
+            <p>
+                Desarrollo de un sitio web corporativo para una empresa de tecnología.
+            </p>
+            <footer>
+                <small>Tecnologías utilizadas: HTML, CSS, JS</small>
+            </footer>
+        </article>
+     </section>
+
+     <section>
+        <article> 
+            <header>
+                <h4>Sitio Web Corporativo</h4>
+            </header>
+            <p>
+                Desarrollo de un sitio web corporativo para una empresa de tecnología.
+            </p>
+            <footer>
+                <small>Tecnologías utilizadas: HTML, CSS, JS</small>
+            </footer>
+        </article>
+     </section>
+
+     <section>
+        <h2>Preguntas Frecuentes</h2>
+
+        <details open>
+            <summary>¿Qué estudios tienes?</summary>
+            <p>Estdié en la Universidad Tecnologico Comfenalco</p>
+        </details>
+
+        <details>
+            <summary>¿Qué edad tengo??</summary>
+            <p>20 años</p>
+        </details>
+
+        <details>
+            <summary>¿De dónde eres?</summary>
+            <p>Colombia, Bolivar, Cartagena de Indias</p>
+        </details>
+     </section>
+
+     <section>
+        <h2>Formulario de Contacto</h2>
+
+        <form method="post" action="/">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <div>
+                    <label>Nombre:
+                        <input type="text" name="name" placeholder="Rony Valdelamar" required>
+                    </label>
+                </div>
+                
+                <label>Email:
+                    <input type="email" name="email" placeholder="ronnyandres120@gmail.com" required>
+                </label>
+
+                <fieldset>
+                    <legend>Información Adicional
+
+                        <div>
+                            <label for="">Teléfono:
+                                <input type="tel" name="phone" placeholder="3156761491" required pattern="[0-9]{9}">
+                            </label>
+                        </div>
+                        
+                    </legend>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros
+
+                        <div>
+                            <label for="why"> ¿Por qué quieres contactarme? </label>
+                            <select name="why" id="why">
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Más Información</option>
+
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="terms">¿Aceptas los términos?</label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </div>
+
+                        <div>
+                            <label for="myBrowser">¿Con qué lenguaje?</label>
+                            <input list="browsers" id="myBrowser" name="myBrowser" />
+                            <datalist id="browsers">
+                            <option value="Chrome"></option>
+                            <option value="Firefox"></option>
+                            <option value="Opera"></option>
+                            <option value="Safari"></option>
+                            <option value="Microsoft Edge"></option>
+                            </datalist>
+                        </div>
+                    </legend>
+                </fieldset>
+
+                <!-- <input type="submit" value="Enviar Contacto"> -->
+                <button type="submit">Enviar Datos</button>
+            </fieldset>
+        </form>
+     </section>
+
+    </main>
+
+    <footer>
+        <small>Copyright 2024 - Rony Valdelamar</small>
+
+        <a href="mailto:ronnyandres120@gmail.com">Envíame un Correo</a>
+        <a href="tel:+57 3156761491">Llamar por teléfono</a>
+    </footer>
+
+
+</body>
+</html>
